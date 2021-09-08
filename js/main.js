@@ -1,15 +1,10 @@
 'use strict';
 
-window.confirm('Are you ready?');
-let answer = window.prompt('Show tip: "yes" Start game: "no"');
+const answer = window.prompt('Show tip to enter "yes"');
 
 if(answer === 'yes') {
-  window.confirm('Move mouse to right and left. Game will be started right now!!');
-} else if (answer === 'no') {
-  window.alert('Loading...');
-} else {
-  window.alert('Loading...')
-}
+  window.alert('Move mouse to right and left. Game will be started right now!!');
+} 
 
 (() => {
  function rand(min, max) {
